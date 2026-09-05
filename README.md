@@ -153,10 +153,4 @@ streamlit run app/streamlit_app.py
 2. Maintain parameter key consistency across `core/engine.py`, `data/cfd_dataset.csv`, `ml/model_config.json`, and `optimizer/engine_optimizer.py`.
 3. Confirm all tests pass via `python -m pytest tests/ -q` before submitting a PR.
 
----
 
-## License & Contact
-
-All rights reserved by project owners pending formal licensing.  
-**Maintainer:** *Add Name / Email*  
-**Repository:** *Add URL*
