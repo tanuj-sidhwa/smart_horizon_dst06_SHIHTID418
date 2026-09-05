@@ -1,0 +1,21 @@
+{
+  "model_type": "HistGradientBoosting",
+  "input_type": "physics_model_outputs",
+  "target_type": "absolute_cfd_correction",
+  "correction_definition": "Delta = CFD - Physics",
+  "prediction_definition": "R_hat = P + Delta_hat",
+  "features": [
+    "thrust_N",
+    "fuel_flow_kg_s",
+    "tsfc_kg_N_s",
+    "exhaust_velocity_m_s",
+    "exhaust_temp_K",
+    "compressor_power_W",
+    "thermal_efficiency"
+  ],
+  "number_of_cases_used": 9207,
+  "random_state": 42,
+  "train_fraction": 0.7,
+  "validation_fraction": 0.15,
+  "test_fraction": 0.15
+}

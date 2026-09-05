@@ -1,0 +1,13 @@
+# Core
+numpy>=2.0,<2.3
+pandas>=2.0,<3.0
+scikit-learn>=1.5,<1.8
+joblib>=1.4,<2.0
+
+# UI
+streamlit>=1.30
+plotly>=5.18
+
+# FreeCAD (cad/freecad_generate.py) is NOT a pip package — install the
+# FreeCAD desktop application separately and run that script with
+# FreeCAD's own Python (freecadcmd), not pip's.
