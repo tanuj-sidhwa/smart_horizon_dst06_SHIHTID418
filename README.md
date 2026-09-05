@@ -124,15 +124,10 @@ python pipeline/validate_against_cfd.py
 python ml/train_physics_correction.py
 
 # 4. Run optimizer for 100N thrust class
-python pipeline/run_optimization.py \
-    --thrust 100 --thrust-band 3 \
-    --max-exhaust-temp 1150 \
-    --min-exhaust-velocity 300 --max-exhaust-velocity 500 \
-    --population 80 --generations 100
+python pipeline/run_optimization.py --thrust 100 --thrust-band 3 --max-exhaust-temp 1150 --min-exhaust-velocity 300 --max-exhaust-velocity 500 --population 80 --generations 100
 
 # 5. Generate CAD geometry
-freecadcmd cad/freecad_generate.py \
-    --design outputs/best_design.json --out outputs/turbojet.step
+freecadcmd cad/freecad_generate.py --design outputs/best_design.json --out outputs/turbojet.step
 
 # 6. Launch Web Interface
 streamlit run app/streamlit_app.py
